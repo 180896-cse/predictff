@@ -1,0 +1,41 @@
+Steps to run the code:
+----------------------
+
+1. Unzip the code in a folder
+
+2. Install requisite packages
+	pip install -r requirements.txt
+
+3. From the shell/command prompt go to that directory
+	cd <directory path>
+
+4. Install virtualenv
+	pip install virtualenv
+
+5. Create the virtual environment
+	virtualenv env
+
+6. Activate the Virtual environment
+	env\Scripts\activate
+
+7. Run the streamlit app
+	streamlit run app.py
+
+8. Open the browser and go to URL
+	 Local URL: http://localhost:8501
+  	 Network URL: http://192.168.1.5:8501
+
+
+
+
+
+NOTE : If you get an error "...toml.decoder...", 
+
+
+I also got the same error while I tried to run the 'streamlit' command.
+
+So, what I did is track in the code entirely to see from where I can find this 'config.toml' and simply deleted the file.
+
+The path for 'config.toml' file in Windows is: C:users/{username}/.streamlit/config.toml
+
+Delete this file and it will solve the error.
